@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+ul{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin: 0;
+    padding: 20px 0;
+    background-color: rgb(248, 249, 249);
+    display: flex;
+    border-radius: 10px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, .3);
+}
+
+ul li{
+    list-style: none;
+    text-align: center;
+    display: block;
+}
+
+
+
+ul li a{
+    text-decoration: none;
+    padding: 0px 50px;
+    display: block;
+    
+}
+ul li:last-child{
+    border-right: none;
+}
+
+/* هنا الحل */
+ul li {
+    border-right: 1px solid black;
+}
+
+
+
+ul li a .icon{
+    width: 40px;
+    height: 40px;
+    background-color: rgb(246, 243, 243);
+    text-align: center;
+    overflow: hidden;
+    margin: 0 auto 10px;
+}
+
+ul li a .icon .fas {
+    width: 100%;
+    height: 100%;
+    line-height: 40px;
+    font-size: 34px;
+    transition: 0.5s;
+    color: #000;
+}
+
+ul li a:hover .icon .fas{
+    transform: translateY(-100%);
+
+}
